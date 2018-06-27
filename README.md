@@ -1,4 +1,4 @@
-# Marvel Comics
+# Pokémon
 
 ### Initial configuration
 
