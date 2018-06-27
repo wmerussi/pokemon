@@ -1,0 +1,32 @@
+<div class="pokemon__basic-info--container">
+  <div class="pokemon__image">
+    <img src="{{ pokemon?.sprites.front_default }}" alt="">
+
+    <h2>{{ getTitle() }}</h2>
+
+    <ul class="pokemon--types">
+      <li class="pokemon__type pokemon__type--{{ type.name }}" *ngFor="let type of getTypes()">{{ type.name }}</li>
+    </ul>
+  </div>
+
+  <ul class="pokemon__basic-info">
+    <li>
+      <h3>Peso</h3>
+      <span>{{ getWeight() }}</span>
+    </li>
+
+    <li>
+      <h3>Altura</h3>
+      <span>{{ getHeight() }}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="pokemon__stats">
+  <ul>
+    <li *ngFor="let summ of pokemon.stats">
+      <h3>{{ summ.stat.name }}</h3>
+      <span>{{ summ.base_stat }}</span>
+    </li>
+  </ul>
+</div>

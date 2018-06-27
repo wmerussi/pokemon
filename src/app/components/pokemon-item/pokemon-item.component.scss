@@ -1,0 +1,31 @@
+@import "../../../styles/styles";
+
+img,
+span,
+a {
+  display: block;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+span {
+  @extend %heading--small;
+
+  margin-top: spacing(small);
+  text-transform: capitalize;
+}
+
+a {
+  @extend %button--primary;
+  @extend %button--base;
+  @extend %border-radius--base;
+
+  margin-top: spacing(base);
+}
+
+.pokemon-item {
+  text-align: center;
+}

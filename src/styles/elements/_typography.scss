@@ -1,0 +1,24 @@
+h2 {
+  @extend %heading--xlarge;
+}
+
+h3 {
+  @extend %title--small;
+  @extend %title--text-01;
+
+  + span {
+    @extend %heading--xlarge;
+
+    color: #888;
+    letter-spacing: -2px;
+  }
+
+  @include grid(lg) {
+    @extend %title--large;
+  }
+}
+
+p,
+span {
+  @extend %body;
+}

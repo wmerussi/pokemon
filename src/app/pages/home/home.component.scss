@@ -1,0 +1,17 @@
+@import "../../../styles/styles";
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  padding: spacing(base);
+  max-width: 80%;
+
+  li {
+    margin: {
+      left: spacing(base);
+      top: spacing(base);
+    }
+  }
+}
